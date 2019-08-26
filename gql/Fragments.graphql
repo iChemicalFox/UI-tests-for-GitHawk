@@ -1,0 +1,111 @@
+fragment reactionFields on Reactable {
+  viewerCanReact
+  reactionGroups {
+    viewerHasReacted
+    users(first: 3) {
+      nodes {
+        login
+      }
+      totalCount
+    }
+    content
+  }
+}
+
+fragment commentFields on Comment {
+  author {
+    login
+    avatarUrl
+  }
+  editor {
+    login
+  }
+  lastEditedAt
+  body
+  createdAt
+  viewerDidAuthor
+}
+
+fragment lockableFields on Lockable {
+  locked
+}
+
+fragment closableFields on Closable {
+  closed
+}
+
+fragment labelableFields on Labelable {
+  labels(first: 30) {
+    nodes {
+      color
+      name
+    }
+  }
+}
+
+fragment updatableFields on Updatable {
+  viewerCanUpdate
+}
+
+fragment deletableFields on Deletable {
+  viewerCanDelete
+}
+
+fragment nodeFields on Node {
+  id
+}
+
+fragment referencedRepositoryFields on RepositoryInfo {
+  name
+  owner {
+    login
+  }
+}
+
+fragment assigneeFields on Assignable {
+  assignees(first:$page_size) {
+    nodes {
+      login
+      avatarUrl
+    }
+  }
+}
+
+fragment headPaging on PageInfo {
+  hasPreviousPage
+  startCursor
+}
+
+fragment milestoneFields on Milestone {
+  number
+  title
+  url
+  dueOn
+  openCount: issues(states:[OPEN]) {totalCount}
+  totalCount: issues {totalCount}
+}
+
+fragment repoEventFields on Comment {
+  createdAt
+  author {
+    login
+  }
+}
+
+fragment commitContext on Commit {
+  id
+  status {
+    contexts {
+      id
+      context
+      state
+      creator {
+        login
+        avatarUrl
+      }
+      description
+      targetUrl
+    }
+    state
+  }
+}

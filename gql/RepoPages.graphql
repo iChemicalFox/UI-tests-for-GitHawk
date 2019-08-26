@@ -1,0 +1,35 @@
+query RepoSearchPages($query: String!, $after: String, $page_size: Int!) {
+  search(query: $query, type: ISSUE, after: $after, first: $page_size) {
+    nodes {
+      ... on Issue {
+        ...repoEventFields
+        ...nodeFields
+        ...labelableFields
+        title
+        number
+        issueState: state
+      }
+      ... on PullRequest {
+        ...repoEventFields
+        ...nodeFields
+        ...labelableFields
+        title
+        number
+        pullRequestState: state
+        commits(last: 1) {
+          nodes {
+            commit {
+              status {
+                state
+              }
+            }
+          }
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

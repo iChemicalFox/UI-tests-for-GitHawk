@@ -1,0 +1,419 @@
+query IssueOrPullRequest($owner: String!, $repo: String!, $number: Int!, $page_size: Int!, $before: String) {
+  repository(owner: $owner, name: $repo) {
+    name
+    hasIssuesEnabled
+    viewerCanAdminister
+    mergeCommitAllowed
+    rebaseMergeAllowed
+    squashMergeAllowed
+    mentionableUsers(first: 50) {
+      nodes {
+        avatarUrl
+        login
+      }
+    }
+    defaultBranchRef {
+      name
+    }
+    issueOrPullRequest(number: $number) {
+      ... on Issue {
+        timeline(last: $page_size, before: $before) {
+          pageInfo{...headPaging}
+          nodes {
+            ... on Commit {
+              ...nodeFields
+              author {
+                user {
+                  login
+                  avatarUrl
+                }
+              }
+              oid
+              messageHeadline
+            }
+            ... on IssueComment {
+              ...nodeFields
+              ...reactionFields
+              ...commentFields
+              ...updatableFields
+              ...deletableFields
+            }
+            ... on LabeledEvent {
+              ...nodeFields
+              actor {login}
+              label {
+                color
+                name
+              }
+              createdAt
+            }
+            ... on UnlabeledEvent {
+              ...nodeFields
+              actor {login}
+              label {
+                color
+                name
+              }
+              createdAt
+            }
+            ... on ClosedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              closer {
+                ... on Commit { oid }
+                ... on PullRequest {
+                  mergeCommit { oid }
+                }
+              }
+            }
+            ... on ReopenedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on RenamedTitleEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              currentTitle
+            }
+            ... on LockedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on UnlockedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on CrossReferencedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              source {
+                ... on Issue {
+                  title
+                  number
+                  closed
+                  repository {
+                    name
+                    owner{login}
+                  }
+                }
+                ... on PullRequest {
+                  title
+                  number
+                  closed
+                  merged
+                  repository {
+                    name
+                    owner{login}
+                  }
+                }
+              }
+            }
+            ... on ReferencedEvent {
+              createdAt
+              ...nodeFields
+              refCommit: commit {oid}
+              actor {login}
+              commitRepository {
+                ...referencedRepositoryFields
+              }
+              subject {
+                ... on Issue {
+                  title
+                  number
+                  closed
+                }
+                ... on PullRequest {
+                  title
+                  number
+                  closed
+                  merged
+                }
+              }
+            }
+            ... on RenamedTitleEvent {
+              ...nodeFields
+              createdAt
+              currentTitle
+              previousTitle
+              actor {login}
+            }
+            ... on AssignedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              user{login}
+            }
+            ... on UnassignedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              user{login}
+            }
+            ...on MilestonedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              milestoneTitle
+            }
+            ...on DemilestonedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              milestoneTitle
+            }
+          }
+        }
+        milestone{...milestoneFields}
+        ...reactionFields
+        ...commentFields
+        ...lockableFields
+        ...closableFields
+        ...labelableFields
+        ...updatableFields
+        ...nodeFields
+        ...assigneeFields
+        number
+        title
+      }
+      ... on PullRequest {
+        timeline(last: $page_size, before: $before) {
+          pageInfo{...headPaging}
+          nodes {
+            ... on Commit {
+              ...nodeFields
+              author {
+                user {
+                  login
+                  avatarUrl
+                }
+              }
+              oid
+              messageHeadline
+            }
+            ... on IssueComment {
+              ...nodeFields
+              ...reactionFields
+              ...commentFields
+              ...updatableFields
+              ...deletableFields
+            }
+            ... on LabeledEvent {
+              ...nodeFields
+              actor {login}
+              label {
+                color
+                name
+              }
+              createdAt
+            }
+            ... on UnlabeledEvent {
+              ...nodeFields
+              actor {login}
+              label {
+                color
+                name
+              }
+              createdAt
+            }
+            ... on ClosedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              closer {
+                ... on Commit { oid }
+                ... on PullRequest {
+                  mergeCommit { oid }
+                }
+              }
+            }
+            ... on ReopenedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on RenamedTitleEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              currentTitle
+            }
+            ... on LockedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on UnlockedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+            }
+            ... on MergedEvent {
+              ...nodeFields
+              mergedCommit: commit {oid}
+              actor {login}
+              createdAt
+            }
+            ... on PullRequestReviewThread {
+              comments(first:$page_size) {
+                nodes {
+                  ...reactionFields
+                  ...nodeFields
+                  ...commentFields
+                  path
+                  diffHunk
+                }
+              }
+            }
+            ... on PullRequestReview {
+              ...nodeFields
+              ...commentFields
+              state
+              submittedAt
+              author {login}
+              comments { totalCount }
+            }
+            ... on CrossReferencedEvent {
+              ...nodeFields
+              actor {login}
+              createdAt
+              source {
+                ... on Issue {
+                  title
+                  number
+                  closed
+                  repository {
+                    name
+                    owner{login}
+                  }
+                }
+                ... on PullRequest {
+                  title
+                  number
+                  closed
+                  merged
+                  repository {
+                    name
+                    owner{login}
+                  }
+                }
+              }
+            }
+            ... on ReferencedEvent {
+              createdAt
+              ...nodeFields
+              actor {login}
+              commitRepository {
+                ...referencedRepositoryFields
+              }
+              subject {
+                ... on Issue {
+                  title
+                  number
+                  closed
+                }
+                ... on PullRequest {
+                  title
+                  number
+                  closed
+                  merged
+                }
+              }
+            }
+            ... on RenamedTitleEvent {
+              ...nodeFields
+              createdAt
+              currentTitle
+              previousTitle
+              actor {login}
+            }
+            ... on AssignedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              user{login}
+            }
+            ... on UnassignedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              user{login}
+            }
+            ... on ReviewRequestedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              requestedReviewer{
+                ... on Actor {
+                  login
+                }
+              }
+            }
+            ... on ReviewRequestRemovedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              requestedReviewer {
+                ... on Actor {
+                  login
+                }
+              }
+            }
+            ...on MilestonedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              milestoneTitle
+            }
+            ...on DemilestonedEvent {
+              ...nodeFields
+              createdAt
+              actor{login}
+              milestoneTitle
+            }
+          }
+        }
+        reviewRequests(first: $page_size) {
+          nodes {
+            requestedReviewer {
+              ... on Actor {
+                login
+                avatarUrl
+              }
+            }
+          }
+        }
+        commits(last: 1) {
+          nodes {
+            commit {
+              ...commitContext
+            }
+          }
+        }
+        milestone{...milestoneFields}
+        ...reactionFields
+        ...commentFields
+        ...lockableFields
+        ...closableFields
+        ...labelableFields
+        ...updatableFields
+        ...nodeFields
+        ...assigneeFields
+        number
+        title
+        merged
+        baseRefName
+        changedFiles
+        additions
+        deletions
+        mergeable
+        mergeStateStatus
+      }
+    }
+  }
+}

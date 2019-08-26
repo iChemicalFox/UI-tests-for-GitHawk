@@ -1,0 +1,14 @@
+{
+  "destination": "gen",
+  "rename_map": {
+    "assignee": "user",
+    "creator": "user",
+    "actor": "user",
+    "owner": "user",
+    "parent": "repository",
+    "repo": "repository",
+    "source": "repository",
+    "base": "branch",
+    "head": "branch"
+  }
+}
