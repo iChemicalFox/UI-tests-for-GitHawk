@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E0F7AF231696750020320D /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7AE231696750020320D /* Secrets.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -495,7 +496,6 @@
 		986B87381F2CB29700AAB55C /* RepositorySummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B87371F2CB29700AAB55C /* RepositorySummaryCell.swift */; };
 		986B873C1F2CEB1500AAB55C /* GQL+RepositoryIssueSummaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B873B1F2CEB1500AAB55C /* GQL+RepositoryIssueSummaryType.swift */; };
 		986B873E1F2E1CE400AAB55C /* RepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B873D1F2E1CE400AAB55C /* RepositoryClient.swift */; };
-		9870B9031FC73EE70009719C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B9021FC73EE70009719C /* Secrets.swift */; };
 		9870B9081FC74E300009719C /* SecretsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B9071FC74E300009719C /* SecretsTests.swift */; };
 		98835BCE1F1965E2005BA24F /* UIDevice+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98835BCD1F1965E2005BA24F /* UIDevice+Model.swift */; };
 		98835BD21F1A158D005BA24F /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98835BD11F1A158D005BA24F /* LabelCell.swift */; };
@@ -596,6 +596,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02E0F7AE231696750020320D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1099,7 +1100,6 @@
 		986B87371F2CB29700AAB55C /* RepositorySummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySummaryCell.swift; sourceTree = "<group>"; };
 		986B873B1F2CEB1500AAB55C /* GQL+RepositoryIssueSummaryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GQL+RepositoryIssueSummaryType.swift"; sourceTree = "<group>"; };
 		986B873D1F2E1CE400AAB55C /* RepositoryClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryClient.swift; sourceTree = "<group>"; };
-		9870B9021FC73EE70009719C /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		9870B9071FC74E300009719C /* SecretsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsTests.swift; sourceTree = "<group>"; };
 		98835BCD1F1965E2005BA24F /* UIDevice+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Model.swift"; sourceTree = "<group>"; };
 		98835BD11F1A158D005BA24F /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
@@ -1846,7 +1846,6 @@
 				2980033A1F51E82400BE90F4 /* Rating */,
 				293189271F5391F700EF0911 /* Result.swift */,
 				294A3D751FB29843000E81A4 /* ScrollViewKeyboardAdjuster.swift */,
-				9870B9021FC73EE70009719C /* Secrets.swift */,
 				3E79A2FE1F8A7DA700E1126B /* ShortcutHandler.swift */,
 				29973E551F68BFDE0004B693 /* Signature.swift */,
 				2977A35A219927F500DBC354 /* SpecialGitHubEmoji.swift */,
@@ -1858,6 +1857,7 @@
 				2930F2721F8A27750082BA26 /* WidthCache.swift */,
 				D8BAD0651FDF224600C41071 /* WrappingStaticSpacingFlowLayout.swift */,
 				2955D4AD21B4752E00A393D3 /* Announcer.swift */,
+				02E0F7AE231696750020320D /* Secrets.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -3043,6 +3043,7 @@
 				299997382031DEB300995FFD /* IssueMergeType.swift in Sources */,
 				2958406D1EE8EBF3007723C6 /* IssueCommentPhoto.swift in Sources */,
 				295840DA1EEA07E4007723C6 /* IssueCommentQuoteCell.swift in Sources */,
+				02E0F7AF231696750020320D /* Secrets.swift in Sources */,
 				295840D81EEA0686007723C6 /* IssueCommentQuoteModel.swift in Sources */,
 				29B3B91721A0B38C006BED05 /* RepositoryImageViewController.swift in Sources */,
 				292FCB071EDFCC510026635E /* IssueCommentReactionCell.swift in Sources */,
@@ -3113,7 +3114,6 @@
 				2931892F1F539C0E00EF0911 /* IssueMilestoneSectionController.swift in Sources */,
 				29BBD82920CAC7D5004D62FE /* NotificationViewModel.swift in Sources */,
 				299F63E2205DE1470015D901 /* UIView+DateDetails.swift in Sources */,
-				9870B9031FC73EE70009719C /* Secrets.swift in Sources */,
 				29A5AF451F9298360065D529 /* GitHubClient+Repository.swift in Sources */,
 				29FE636121AE2E7900A07A86 /* RepositoryErrorViewController.swift in Sources */,
 				29F7F0631F2A875C00F6075D /* IssueNeckLoadModel.swift in Sources */,
