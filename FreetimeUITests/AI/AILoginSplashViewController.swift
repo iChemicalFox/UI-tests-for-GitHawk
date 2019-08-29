@@ -13,4 +13,7 @@ final class AILoginSplashViewController: AccessibilityObject {
     
     static let signInButton = AccessibilityObject(prefix: AILoginSplashViewController.name, name: "SignInButton")
     static let splashView = AccessibilityObject(prefix: AILoginSplashViewController.name, name: "SplashView")
+    static let welcomeTitle = AccessibilityObject(prefix: AILoginSplashViewController.name, name: "WelcomeTitle")
+    static let welcomeText = AccessibilityObject(prefix: AILoginSplashViewController.name, name: "WelcomeText")
+    static let tokenAuthorizationButton = AccessibilityObject(prefix: AILoginSplashViewController.name, name: "TokenAuthorizationButton")
 }
