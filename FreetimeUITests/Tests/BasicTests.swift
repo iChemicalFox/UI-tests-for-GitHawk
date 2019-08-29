@@ -19,6 +19,7 @@ class BasicTests: XCTestCase {
 
     override func tearDown() {
         application.terminate()
+        Springboard.deleteMyApp()
         super.tearDown()
     }
 }
