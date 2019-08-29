@@ -34,6 +34,9 @@ final class LoginSplashViewController: UIViewController {
     @IBOutlet weak var splashView: SplashView!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var welcomeTitle: UILabel!
+    @IBOutlet weak var welcomeText: UILabel!
+    @IBOutlet weak var tokenAuthorizationButton: UIButton!
     private weak var delegate: LoginSplashViewControllerDelegate?
 
     @available(iOS 11.0, *)
@@ -71,6 +74,9 @@ final class LoginSplashViewController: UIViewController {
         signInButton.addTouchEffect()
         signInButton.accessibilityIdentifier = AILoginSplashViewController.signInButton.identifier
         splashView.accessibilityIdentifier = AILoginSplashViewController.splashView.identifier
+        tokenAuthorizationButton.accessibilityIdentifier = AILoginSplashViewController.tokenAuthorizationButton.identifier
+        welcomeTitle.accessibilityIdentifier = AILoginSplashViewController.welcomeTitle.identifier
+        welcomeText.accessibilityIdentifier = AILoginSplashViewController.welcomeText.identifier
     }
 
     override func viewDidAppear(_ animated: Bool) {
