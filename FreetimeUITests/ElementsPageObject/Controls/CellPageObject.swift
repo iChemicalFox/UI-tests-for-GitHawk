@@ -1,5 +1,5 @@
 //
-//  ButtonPageObject.swift
+//  CellPageObject.swift
 //  FreetimeUITests
 //
 //  Created by a.slonevskiy on 26/08/2019.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ButtonPageObject: BasicElementsPageObject {
+class CellPageObject: BasicControlElementsPageObject {
     var title: String {
         return element.label
     }

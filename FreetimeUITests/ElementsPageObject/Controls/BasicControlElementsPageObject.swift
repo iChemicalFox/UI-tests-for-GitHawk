@@ -1,5 +1,5 @@
 //
-//  BasicElementsPageObject.swift
+//  BasicControlElementsPageObject.swift
 //  FreetimeUITests
 //
 //  Created by a.slonevskiy on 26/08/2019.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BasicElementsPageObject: XCTest {
+class BasicControlElementsPageObject {
     let element: XCUIElement
     
     init(element: XCUIElement) {
