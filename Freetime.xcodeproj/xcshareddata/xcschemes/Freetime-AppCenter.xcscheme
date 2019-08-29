@@ -33,6 +33,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02E0F7BA2316B46C0020320D"
+               BuildableName = "FreetimeUITests.xctest"
+               BlueprintName = "FreetimeUITests"
+               ReferencedContainer = "container:Freetime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "297AE8471EC0D58A00B44A1F"
                BuildableName = "FreetimeTests.xctest"
                BlueprintName = "FreetimeTests"
