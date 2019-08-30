@@ -19,20 +19,20 @@
 		02E0F7CC2316B4840020320D /* ButtonPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3DF23145E4900352CB5 /* ButtonPageObject.swift */; };
 		02E0F7CD2316B4860020320D /* TextFieldPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7B52316A44B0020320D /* TextFieldPageObject.swift */; };
 		02E0F7CE2316B4890020320D /* CellPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3E123145E4900352CB5 /* CellPageObject.swift */; };
-		02E0F7CF2316B48B0020320D /* BasicAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7B32316A1820020320D /* BasicAlertPageObject.swift */; };
 		02E0F7D02316B48D0020320D /* BasicControlElementsPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3DE23145E4900352CB5 /* BasicControlElementsPageObject.swift */; };
 		02E0F7D12316B4900020320D /* WaitForExistenceTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3E323145E4900352CB5 /* WaitForExistenceTimeout.swift */; };
 		02E0F7D22316B4920020320D /* AuthorizationTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7B023169EA50020320D /* AuthorizationTokens.swift */; };
 		02E0F7D82316BD750020320D /* ElementsOnViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7D72316BD750020320D /* ElementsOnViewControllerTests.swift */; };
-		02E0F7DA2316C6860020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7D92316C6860020320D /* PersonalAccessTokenAlertPageObject.swift */; };
 		02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */; };
-		02E0F7DE2317B6FA0020320D /* TabbarPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */; };
 		02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DF2317BE4C0020320D /* Springboard.swift */; };
 		02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */; };
 		02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */; };
 		02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */; };
 		02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E72318FE400020320D /* AISettingsViewController.swift */; };
 		02E0F7E92319051C0020320D /* AISettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E72318FE400020320D /* AISettingsViewController.swift */; };
+		02E0F7EB23191D690020320D /* TabbarPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EA23191D690020320D /* TabbarPageObject.swift */; };
+		02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */; };
+		02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -640,19 +640,19 @@
 		02B1C3E323145E4900352CB5 /* WaitForExistenceTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForExistenceTimeout.swift; sourceTree = "<group>"; };
 		02E0F7AE231696750020320D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		02E0F7B023169EA50020320D /* AuthorizationTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTokens.swift; sourceTree = "<group>"; };
-		02E0F7B32316A1820020320D /* BasicAlertPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasicAlertPageObject.swift; path = ../BasicAlertPageObject.swift; sourceTree = "<group>"; };
 		02E0F7B52316A44B0020320D /* TextFieldPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPageObject.swift; sourceTree = "<group>"; };
 		02E0F7BB2316B46C0020320D /* FreetimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreetimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E0F7BF2316B46C0020320D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E0F7D72316BD750020320D /* ElementsOnViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsOnViewControllerTests.swift; sourceTree = "<group>"; };
-		02E0F7D92316C6860020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAccessTokenAlertPageObject.swift; sourceTree = "<group>"; };
 		02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVCPageObject.swift; sourceTree = "<group>"; };
-		02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabbarPageObject.swift; path = ../ElementsPageObject/TabbarPageObject.swift; sourceTree = "<group>"; };
 		02E0F7DF2317BE4C0020320D /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Springboard.swift; path = ../Tests/Springboard.swift; sourceTree = "<group>"; };
 		02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7E72318FE400020320D /* AISettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsViewController.swift; sourceTree = "<group>"; };
+		02E0F7EA23191D690020320D /* TabbarPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarPageObject.swift; sourceTree = "<group>"; };
+		02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalAccessTokenAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PersonalAccessTokenAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
+		02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/BasicAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1280,7 +1280,7 @@
 			isa = PBXGroup;
 			children = (
 				02B1C3DB23145E4900352CB5 /* BasicPageObject.swift */,
-				02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */,
+				02E0F7EA23191D690020320D /* TabbarPageObject.swift */,
 				02B1C3DC23145E4900352CB5 /* LoginSplashPageObject.swift */,
 				02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */,
 				02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */,
@@ -1337,8 +1337,8 @@
 		02E0F7D62316B8930020320D /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				02E0F7B32316A1820020320D /* BasicAlertPageObject.swift */,
-				02E0F7D92316C6860020320D /* PersonalAccessTokenAlertPageObject.swift */,
+				02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */,
+				02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */,
 			);
 			name = Alerts;
 			path = ../ElementsPageObject/Alerts;
@@ -3098,23 +3098,23 @@
 				02E0F7C62316B4730020320D /* BasicTests.swift in Sources */,
 				02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */,
 				02E0F7CD2316B4860020320D /* TextFieldPageObject.swift in Sources */,
+				02E0F7EB23191D690020320D /* TabbarPageObject.swift in Sources */,
 				02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */,
 				02E0F7CC2316B4840020320D /* ButtonPageObject.swift in Sources */,
 				02E0F7D82316BD750020320D /* ElementsOnViewControllerTests.swift in Sources */,
 				02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */,
+				02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */,
 				02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */,
 				02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */,
 				02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */,
 				02E0F7D12316B4900020320D /* WaitForExistenceTimeout.swift in Sources */,
+				02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */,
 				02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */,
 				02E0F7C92316B47C0020320D /* BasicPageObject.swift in Sources */,
 				02E0F7CA2316B47E0020320D /* LoginSplashPageObject.swift in Sources */,
 				02E0F7D02316B48D0020320D /* BasicControlElementsPageObject.swift in Sources */,
-				02E0F7DA2316C6860020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */,
-				02E0F7DE2317B6FA0020320D /* TabbarPageObject.swift in Sources */,
 				02E0F7C82316B4790020320D /* AccessibilityObject.swift in Sources */,
 				02E0F7CB2316B4810020320D /* LabelPageObject.swift in Sources */,
-				02E0F7CF2316B48B0020320D /* BasicAlertPageObject.swift in Sources */,
 				02E0F7CE2316B4890020320D /* CellPageObject.swift in Sources */,
 				02E0F7D22316B4920020320D /* AuthorizationTokens.swift in Sources */,
 			);
