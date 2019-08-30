@@ -8,7 +8,7 @@
 
 import XCTest
 
-class LoginSplashPageObject: BasicPageObject {
+final class LoginSplashPageObject: BasicPageObject {
     private(set) lazy var signInButton = ButtonPageObject(element: application.buttons[AILoginSplashViewController.signInButton.identifier])
     private(set) lazy var splashView = BasicControlElementsPageObject(element: application.images[AILoginSplashViewController.splashView.identifier])
     private(set) lazy var tokenAuthorizationButton = ButtonPageObject(element: application.buttons[AILoginSplashViewController.tokenAuthorizationButton.identifier])

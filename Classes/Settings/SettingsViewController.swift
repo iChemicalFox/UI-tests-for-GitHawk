@@ -58,6 +58,18 @@ GitHubSessionListener {
         signatureSwitch.isOn = Signature.enabled
         openExternalLinksSwitch.isOn = UserDefaults.standard.shouldOpenExternalLinksInSafari
         pushSettingsButton.accessibilityLabel = NSLocalizedString("How we send push notifications in GitHawk", comment: "")
+        pushCell.accessibilityIdentifier = AISettingsViewController.pushCell.identifier
+        pushSwitch.accessibilityIdentifier = AISettingsViewController.pushSwitch.identifier
+        badgeCell.accessibilityIdentifier = AISettingsViewController.badgeCell.identifier
+        badgeSwitch.accessibilityIdentifier = AISettingsViewController.badgeSwitch.identifier
+        apiStatusView.accessibilityIdentifier = AISettingsViewController.apiStatusView.identifier
+        reviewAccessCell.accessibilityIdentifier = AISettingsViewController.reviewAccessCell.identifier
+        githubStatusCell.accessibilityIdentifier = AISettingsViewController.githubStatusCell.identifier
+        reviewOnAppStoreCell.accessibilityIdentifier = AISettingsViewController.reviewOnAppStoreCell.identifier
+        tryTestFlightBetaCell.accessibilityIdentifier = AISettingsViewController.tryTestFlightBetaCell.identifier
+        reportBugCell.accessibilityIdentifier = AISettingsViewController.reportBugCell.identifier
+        viewSourceCell.accessibilityIdentifier = AISettingsViewController.viewSourceCell.identifier
+        
 
         updateBadge()
 

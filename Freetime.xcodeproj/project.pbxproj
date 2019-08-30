@@ -28,6 +28,11 @@
 		02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */; };
 		02E0F7DE2317B6FA0020320D /* TabbarPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */; };
 		02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DF2317BE4C0020320D /* Springboard.swift */; };
+		02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */; };
+		02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */; };
+		02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */; };
+		02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E72318FE400020320D /* AISettingsViewController.swift */; };
+		02E0F7E92319051C0020320D /* AISettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E72318FE400020320D /* AISettingsViewController.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -644,6 +649,10 @@
 		02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabbarPageObject.swift; path = ../ElementsPageObject/TabbarPageObject.swift; sourceTree = "<group>"; };
 		02E0F7DF2317BE4C0020320D /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Springboard.swift; path = ../Tests/Springboard.swift; sourceTree = "<group>"; };
+		02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCPageObject.swift; sourceTree = "<group>"; };
+		02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVCPageObject.swift; sourceTree = "<group>"; };
+		02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCPageObject.swift; sourceTree = "<group>"; };
+		02E0F7E72318FE400020320D /* AISettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsViewController.swift; sourceTree = "<group>"; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1262,6 +1271,7 @@
 			children = (
 				02B1C3D823145E4900352CB5 /* AILoginSplashViewController.swift */,
 				02B1C3D923145E4900352CB5 /* AccessibilityObject.swift */,
+				02E0F7E72318FE400020320D /* AISettingsViewController.swift */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -1273,6 +1283,9 @@
 				02E0F7DD2317B6FA0020320D /* TabbarPageObject.swift */,
 				02B1C3DC23145E4900352CB5 /* LoginSplashPageObject.swift */,
 				02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */,
+				02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */,
+				02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */,
+				02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */,
 				02E0F7D62316B8930020320D /* Alerts */,
 			);
 			path = ViewControllersPageObject;
@@ -3085,11 +3098,15 @@
 				02E0F7C62316B4730020320D /* BasicTests.swift in Sources */,
 				02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */,
 				02E0F7CD2316B4860020320D /* TextFieldPageObject.swift in Sources */,
+				02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */,
 				02E0F7CC2316B4840020320D /* ButtonPageObject.swift in Sources */,
 				02E0F7D82316BD750020320D /* ElementsOnViewControllerTests.swift in Sources */,
 				02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */,
+				02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */,
 				02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */,
+				02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */,
 				02E0F7D12316B4900020320D /* WaitForExistenceTimeout.swift in Sources */,
+				02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */,
 				02E0F7C92316B47C0020320D /* BasicPageObject.swift in Sources */,
 				02E0F7CA2316B47E0020320D /* LoginSplashPageObject.swift in Sources */,
 				02E0F7D02316B48D0020320D /* BasicControlElementsPageObject.swift in Sources */,
@@ -3145,6 +3162,7 @@
 				29459A6F1FE61E0500034A04 /* MarkdownCheckboxModel.swift in Sources */,
 				299997302031227E00995FFD /* IssueMergeButtonModel.swift in Sources */,
 				BD67495C217A47BC00E8E4FD /* UIViewController+PresentLabels.swift in Sources */,
+				02E0F7E92319051C0020320D /* AISettingsViewController.swift in Sources */,
 				299F63E0205DDF6B0015D901 /* UIViewController+Routing.swift in Sources */,
 				98835BD41F1A17EE005BA24F /* Bundle+Version.swift in Sources */,
 				29316DB51ECC7DEB007CAE3F /* ButtonCell.swift in Sources */,
