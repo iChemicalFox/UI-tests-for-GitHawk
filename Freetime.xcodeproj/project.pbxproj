@@ -24,7 +24,6 @@
 		02E0F7D22316B4920020320D /* AuthorizationTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7B023169EA50020320D /* AuthorizationTokens.swift */; };
 		02E0F7D82316BD750020320D /* ElementsOnViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7D72316BD750020320D /* ElementsOnViewControllerTests.swift */; };
 		02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */; };
-		02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7DF2317BE4C0020320D /* Springboard.swift */; };
 		02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */; };
 		02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */; };
 		02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */; };
@@ -33,6 +32,7 @@
 		02E0F7EB23191D690020320D /* TabbarPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EA23191D690020320D /* TabbarPageObject.swift */; };
 		02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */; };
 		02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */; };
+		02E0F7F323191F7A0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F223191F7A0020320D /* Springboard.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -645,7 +645,6 @@
 		02E0F7BF2316B46C0020320D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E0F7D72316BD750020320D /* ElementsOnViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsOnViewControllerTests.swift; sourceTree = "<group>"; };
 		02E0F7DB2316F82A0020320D /* NotificationsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVCPageObject.swift; sourceTree = "<group>"; };
-		02E0F7DF2317BE4C0020320D /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Springboard.swift; path = ../Tests/Springboard.swift; sourceTree = "<group>"; };
 		02E0F7E12317D6F40020320D /* SearchVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7E32317D92F0020320D /* BookmarksVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVCPageObject.swift; sourceTree = "<group>"; };
 		02E0F7E52317DE450020320D /* SettingsVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCPageObject.swift; sourceTree = "<group>"; };
@@ -653,6 +652,7 @@
 		02E0F7EA23191D690020320D /* TabbarPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarPageObject.swift; sourceTree = "<group>"; };
 		02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalAccessTokenAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PersonalAccessTokenAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/BasicAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
+		02E0F7F223191F7A0020320D /* Springboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1304,7 +1304,7 @@
 			children = (
 				02B1C3E323145E4900352CB5 /* WaitForExistenceTimeout.swift */,
 				02E0F7B023169EA50020320D /* AuthorizationTokens.swift */,
-				02E0F7DF2317BE4C0020320D /* Springboard.swift */,
+				02E0F7F223191F7A0020320D /* Springboard.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -3102,7 +3102,6 @@
 				02E0F7E22317D6F40020320D /* SearchVCPageObject.swift in Sources */,
 				02E0F7CC2316B4840020320D /* ButtonPageObject.swift in Sources */,
 				02E0F7D82316BD750020320D /* ElementsOnViewControllerTests.swift in Sources */,
-				02E0F7E02317BE4C0020320D /* Springboard.swift in Sources */,
 				02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */,
 				02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */,
 				02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */,
@@ -3117,6 +3116,7 @@
 				02E0F7CB2316B4810020320D /* LabelPageObject.swift in Sources */,
 				02E0F7CE2316B4890020320D /* CellPageObject.swift in Sources */,
 				02E0F7D22316B4920020320D /* AuthorizationTokens.swift in Sources */,
+				02E0F7F323191F7A0020320D /* Springboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
