@@ -12,5 +12,4 @@ final class ElementsOnViewControllerTests: BasicTests {
     private lazy var alertPageObject = BasicAlertPageObject(application: application)
     private lazy var personalTokenAlert = PersonalAccessTokenAlertPageObject(application: application)
     
-    }
 }
