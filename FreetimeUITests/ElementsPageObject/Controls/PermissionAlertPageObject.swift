@@ -1,5 +1,5 @@
 //
-//  WantToUseGitHubAlertPageObject.swift
+//  PermissionAlert.swift
 //  FreetimeUITests
 //
 //  Created by a.slonevskiy on 01/09/2019.
