@@ -19,5 +19,4 @@ class TextFieldPageObject: BasicControlElementsPageObject {
     func typeText(text: String) {
         element.typeText(text)
     }
-
 }
