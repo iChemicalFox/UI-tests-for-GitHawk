@@ -21,5 +21,12 @@ final class AISettingsViewController:AccessibilityObject {
     static let tryTestFlightBetaCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "TryTestFlightBetaCell")
     static let reportBugCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "ReportBugCell")
     static let viewSourceCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "ViewSourceCell")
-    
+    static let setDefaultReactionCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "SetDefaultReactionCell")
+    static let signOutCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "SignOutCell")
+    static let markReadSwitch = AccessibilityObject(prefix: AISettingsViewController.name, name: "MarkReadSwitch")
+    static let accountsCell = AccessibilityObject(prefix: AISettingsViewController.name, name: "AccountsCell")
+    static let signatureSwitch = AccessibilityObject(prefix: AISettingsViewController.name, name: "SignatureSwitch")
+    static let defaultReactionLabel = AccessibilityObject(prefix: AISettingsViewController.name, name: "DefaultReactionLabel")
+    static let pushSettingsButton = AccessibilityObject(prefix: AISettingsViewController.name, name: "PushSettingsButton")
+    static let openExternalLinksSwitch = AccessibilityObject(prefix: AISettingsViewController.name, name: "OpenExternalLinksSwitch")
 }

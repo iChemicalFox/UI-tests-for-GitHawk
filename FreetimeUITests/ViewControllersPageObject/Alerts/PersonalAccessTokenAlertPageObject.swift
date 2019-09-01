@@ -8,10 +8,9 @@
 import XCTest
 
 final class PersonalAccessTokenAlertPageObject: BasicAlertPageObject {
-    override var title: String { return "" }
-    override var text: String { return "" }
+    override var title: String { return "Personal Access Token" }
+    override var text: String { return "Sign in with a Personal Access Token with both repo and user scopes" }
     override var acceptButtonTitle: String { return "Sign in" }
-    override var destructiveButtonTitle: String { return "" }
     lazy var textField = TextFieldPageObject(element: application.alerts.textFields.firstMatch)
     
     @discardableResult

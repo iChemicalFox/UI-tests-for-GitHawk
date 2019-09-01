@@ -33,6 +33,8 @@
 		02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */; };
 		02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */; };
 		02E0F7F323191F7A0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F223191F7A0020320D /* Springboard.swift */; };
+		02E0F7F523194C2B0020320D /* SwitchPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F423194C2A0020320D /* SwitchPageObject.swift */; };
+		02E0F7F7231BA73E0020320D /* WantToUseGitHubAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -653,6 +655,8 @@
 		02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalAccessTokenAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PersonalAccessTokenAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/BasicAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7F223191F7A0020320D /* Springboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
+		02E0F7F423194C2A0020320D /* SwitchPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchPageObject.swift; sourceTree = "<group>"; };
+		02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WantToUseGitHubAlertPageObject.swift; path = FreetimeUITests/ElementsPageObject/Controls/WantToUseGitHubAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1317,6 +1321,7 @@
 				02B1C3E023145E4900352CB5 /* LabelPageObject.swift */,
 				02B1C3E123145E4900352CB5 /* CellPageObject.swift */,
 				02E0F7B52316A44B0020320D /* TextFieldPageObject.swift */,
+				02E0F7F423194C2A0020320D /* SwitchPageObject.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1337,8 +1342,9 @@
 		02E0F7D62316B8930020320D /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */,
 				02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */,
+				02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */,
+				02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */,
 			);
 			name = Alerts;
 			path = ../ElementsPageObject/Alerts;
@@ -3095,6 +3101,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E0F7F7231BA73E0020320D /* WantToUseGitHubAlertPageObject.swift in Sources */,
 				02E0F7C62316B4730020320D /* BasicTests.swift in Sources */,
 				02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */,
 				02E0F7CD2316B4860020320D /* TextFieldPageObject.swift in Sources */,
@@ -3111,6 +3118,7 @@
 				02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */,
 				02E0F7C92316B47C0020320D /* BasicPageObject.swift in Sources */,
 				02E0F7CA2316B47E0020320D /* LoginSplashPageObject.swift in Sources */,
+				02E0F7F523194C2B0020320D /* SwitchPageObject.swift in Sources */,
 				02E0F7D02316B48D0020320D /* BasicControlElementsPageObject.swift in Sources */,
 				02E0F7C82316B4790020320D /* AccessibilityObject.swift in Sources */,
 				02E0F7CB2316B4810020320D /* LabelPageObject.swift in Sources */,

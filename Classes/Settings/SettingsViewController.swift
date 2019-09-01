@@ -69,8 +69,15 @@ GitHubSessionListener {
         tryTestFlightBetaCell.accessibilityIdentifier = AISettingsViewController.tryTestFlightBetaCell.identifier
         reportBugCell.accessibilityIdentifier = AISettingsViewController.reportBugCell.identifier
         viewSourceCell.accessibilityIdentifier = AISettingsViewController.viewSourceCell.identifier
+        setDefaultReaction.accessibilityIdentifier = AISettingsViewController.setDefaultReactionCell.identifier
+        signOutCell.accessibilityIdentifier = AISettingsViewController.signOutCell.identifier
+        markReadSwitch.accessibilityIdentifier = AISettingsViewController.markReadSwitch.identifier
+        accountsCell.accessibilityIdentifier = AISettingsViewController.accountsCell.identifier
+        signatureSwitch.accessibilityIdentifier = AISettingsViewController.signatureSwitch.identifier
+        defaultReactionLabel.accessibilityIdentifier = AISettingsViewController.defaultReactionLabel.identifier
+        pushSettingsButton.accessibilityIdentifier = AISettingsViewController.pushSettingsButton.identifier
+        openExternalLinksSwitch.accessibilityIdentifier = AISettingsViewController.openExternalLinksSwitch.identifier
         
-
         updateBadge()
 
         NotificationCenter.default.addObserver(
