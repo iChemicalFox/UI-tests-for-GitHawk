@@ -7,8 +7,14 @@
 
 import XCTest
 
-final class WantToUseGitHubAlertPageObject: BasicAlertPageObject {
-    override var title: String { return "Freetime Wants to Use github.com to Sign In" }
-    override var text: String { return "This allows the app and website to share information about you" }
-    override var acceptButtonTitle: String { return "Continue" }
+final class PermissionAlert: BasicPageObject {
+    let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+    
+    private(set) lazy var acceptButton = ButtonPageObject(element: springboard.buttons["Continue"])
+    private(set) lazy var rejectButton = ButtonPageObject(element: springboard.buttons["Cancel"])
+    
+    func continueToGitHubAuthorization() {
+        acceptButton.waitForExistence(timeout: .short)
+        acceptButton.tap()
+    }
 }

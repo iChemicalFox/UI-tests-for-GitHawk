@@ -31,7 +31,6 @@
 		02E0F7E92319051C0020320D /* AISettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7E72318FE400020320D /* AISettingsViewController.swift */; };
 		02E0F7EB23191D690020320D /* TabbarPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EA23191D690020320D /* TabbarPageObject.swift */; };
 		02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */; };
-		02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */; };
 		02E0F7F323191F7A0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F223191F7A0020320D /* Springboard.swift */; };
 		02E0F7F523194C2B0020320D /* SwitchPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F423194C2A0020320D /* SwitchPageObject.swift */; };
 		02E0F7F7231BA73E0020320D /* WantToUseGitHubAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */; };
@@ -653,7 +652,6 @@
 		02E0F7E72318FE400020320D /* AISettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsViewController.swift; sourceTree = "<group>"; };
 		02E0F7EA23191D690020320D /* TabbarPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarPageObject.swift; sourceTree = "<group>"; };
 		02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalAccessTokenAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PersonalAccessTokenAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
-		02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/BasicAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7F223191F7A0020320D /* Springboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		02E0F7F423194C2A0020320D /* SwitchPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchPageObject.swift; sourceTree = "<group>"; };
 		02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WantToUseGitHubAlertPageObject.swift; path = FreetimeUITests/ElementsPageObject/Controls/WantToUseGitHubAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
@@ -1273,8 +1271,8 @@
 		02B1C3D723145E4900352CB5 /* AI */ = {
 			isa = PBXGroup;
 			children = (
-				02B1C3D823145E4900352CB5 /* AILoginSplashViewController.swift */,
 				02B1C3D923145E4900352CB5 /* AccessibilityObject.swift */,
+				02B1C3D823145E4900352CB5 /* AILoginSplashViewController.swift */,
 				02E0F7E72318FE400020320D /* AISettingsViewController.swift */,
 			);
 			path = AI;
@@ -1342,7 +1340,6 @@
 		02E0F7D62316B8930020320D /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				02E0F7F023191E9D0020320D /* BasicAlertPageObject.swift */,
 				02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */,
 				02E0F7F6231BA73D0020320D /* WantToUseGitHubAlertPageObject.swift */,
 			);
@@ -3114,7 +3111,6 @@
 				02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */,
 				02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */,
 				02E0F7D12316B4900020320D /* WaitForExistenceTimeout.swift in Sources */,
-				02E0F7F123191E9D0020320D /* BasicAlertPageObject.swift in Sources */,
 				02E0F7E62317DE450020320D /* SettingsVCPageObject.swift in Sources */,
 				02E0F7C92316B47C0020320D /* BasicPageObject.swift in Sources */,
 				02E0F7CA2316B47E0020320D /* LoginSplashPageObject.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BasicPageObject: XCTest {
+class BasicPageObject {
     let application: XCUIApplication
     
     init(application: XCUIApplication) {
