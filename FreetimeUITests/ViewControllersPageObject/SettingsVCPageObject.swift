@@ -8,7 +8,7 @@
 import XCTest
 
 class SettingsVCPageObject: BasicPageObject {
-    private(set) lazy var navigationBarTitle = LabelPageObject(element: application.navigationBars.staticTexts["Settings"])
+    private(set) lazy var navigationBarTitle = LabelPageObject(element: application.navigationBars["Settings"])
     
     private(set) lazy var pushCell = CellPageObject(element: application.cells[AISettingsViewController.pushCell.identifier])
     private(set) lazy var pushSwitch = SwitchPageObject(element: application.switches[AISettingsViewController.pushSwitch.identifier])
@@ -28,4 +28,10 @@ class SettingsVCPageObject: BasicPageObject {
     private(set) lazy var defaultReactionLabel = LabelPageObject(element: application.staticTexts[AISettingsViewController.defaultReactionLabel.identifier])
     private(set) lazy var pushSettingsButton = ButtonPageObject(element: application.buttons[AISettingsViewController.pushSettingsButton.identifier])
     private(set) lazy var openExternalLinksSwitch = SwitchPageObject(element: application.switches[AISettingsViewController.openExternalLinksSwitch.identifier])
+    
+    @discardableResult
+    func scrollToBottomSettingsView() -> SettingsVCPageObject {
+        application.scrollDownToElement(element: signOutCell.element)
+        return self
+    }
 }
