@@ -78,6 +78,7 @@ final class InboxFilterController {
                 iconName: model.type.iconName,
                 iconColor: Styles.Colors.Blue.menu.color,
                 separator: false,
+                accessibilityIdentifier: ContrastContextMenuItem.accessibilityIdentifier(from: model.type),
                 action: { [weak self] menu in
                     menu.dismiss(animated: trueUnlessReduceMotionEnabled)
                     self?.selected(model: model)
@@ -88,6 +89,7 @@ final class InboxFilterController {
             iconName: "repo",
             iconColor: Styles.Colors.Blue.menu.color,
             separator: true,
+            accessibilityIdentifier: ContrastContextMenuItem.accessibilityIdentifier(from: .repo(owner: "", name: "")),
             action: { [weak self, weak viewController] menu in
                 menu.dismiss(animated: trueUnlessReduceMotionEnabled)
                 self?.showRepos(from: viewController)

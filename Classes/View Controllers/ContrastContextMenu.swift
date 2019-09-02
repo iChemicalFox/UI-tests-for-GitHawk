@@ -14,6 +14,7 @@ struct ContrastContextMenuItem {
     let iconName: String?
     let iconColor: UIColor?
     let separator: Bool
+    let accessibilityIdentifier: String?
     let action: ((ContrastContextMenu) -> Void)?
 
     init(
@@ -21,6 +22,7 @@ struct ContrastContextMenuItem {
         iconName: String? = nil,
         iconColor: UIColor? = Styles.Colors.Blue.menu.color,
         separator: Bool = false,
+        accessibilityIdentifier: String? = nil,
         action: ((ContrastContextMenu) -> Void)? = nil
         ) {
         self.title = title
@@ -28,6 +30,7 @@ struct ContrastContextMenuItem {
         self.iconColor = iconColor
         self.separator = separator
         self.action = action
+        self.accessibilityIdentifier = accessibilityIdentifier
     }
 
 }
@@ -117,7 +120,7 @@ final class ContrastContextMenu: UITableViewController {
         if let cell = cell as? Cell {
             cell.border?.isHidden = !item.separator
         }
-
+        cell.accessibilityIdentifier = item.accessibilityIdentifier
         return cell
     }
 
@@ -128,4 +131,23 @@ final class ContrastContextMenu: UITableViewController {
         items[indexPath.row].action?(self)
     }
 
+}
+
+extension ContrastContextMenuItem {
+    static func accessibilityIdentifier(from filterType: InboxFilterModel.FilterType) -> String {
+        switch filterType {
+        case .unread:
+            return AIContrastContextMenuItem.unreadCell.identifier
+        case .all:
+            return AIContrastContextMenuItem.allCell.identifier
+        case .assigned:
+            return AIContrastContextMenuItem.assignedCell.identifier
+        case .created:
+            return AIContrastContextMenuItem.createdCell.identifier
+        case .mentioned:
+            return AIContrastContextMenuItem.mentionedCell.identifier
+        case .repo(_, _):
+            return AIContrastContextMenuItem.repoCell.identifier
+        }
+    }
 }

@@ -16,6 +16,7 @@ final class ElementsOnViewControllerTests: BasicTests {
     private lazy var bookmarksView = BookmarksVCPageObject(application: application)
     private lazy var settingsView = SettingsVCPageObject(application: application)
     private lazy var tabbar = TabbarPageObject(application: application)
+    private lazy var contextMenuView = ContextMenuVCPageObject(application: application)
     
     func testCheckElementsOnLoginSplashView() {
         loginSplashView
@@ -41,7 +42,9 @@ final class ElementsOnViewControllerTests: BasicTests {
             .authorizationWithToken(token: .correctToken)
         tabbar
             .tapOnInboxButton()
-        XCTAssertTrue(notificationsView.navigationBarButton.waitForExistence(timeout: .medium))
+        notificationsView
+            .openContextMenu()
+        XCTAssertTrue(contextMenuView.unreadCell.isVisible && contextMenuView.allCell.isVisible && contextMenuView.mentionedCell.isVisible && contextMenuView.assignedCell.isVisible && contextMenuView.createdCell.isVisible && contextMenuView.repoCell.isVisible)
     }
     
     func testCheckElementsOnSearchView() {
