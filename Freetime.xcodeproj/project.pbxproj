@@ -13,6 +13,7 @@
 		02BC0EC2231D1576008C6BF8 /* AIContrastContextMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC0EC1231D1576008C6BF8 /* AIContrastContextMenuItem.swift */; };
 		02BC0EC3231D1602008C6BF8 /* AIContrastContextMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC0EC1231D1576008C6BF8 /* AIContrastContextMenuItem.swift */; };
 		02BC0EC5231D191B008C6BF8 /* ContextMenuVCPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC0EC4231D191B008C6BF8 /* ContextMenuVCPageObject.swift */; };
+		02BC0ECE231E4E2A008C6BF8 /* PermissionAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BC0ECD231E4E2A008C6BF8 /* PermissionAlertPageObject.swift */; };
 		02E0F7AF231696750020320D /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7AE231696750020320D /* Secrets.swift */; };
 		02E0F7C62316B4730020320D /* BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3D623145E4900352CB5 /* BasicTests.swift */; };
 		02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1C3D823145E4900352CB5 /* AILoginSplashViewController.swift */; };
@@ -37,7 +38,6 @@
 		02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */; };
 		02E0F7F323191F7A0020320D /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F223191F7A0020320D /* Springboard.swift */; };
 		02E0F7F523194C2B0020320D /* SwitchPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F423194C2A0020320D /* SwitchPageObject.swift */; };
-		02E0F7F7231BA73E0020320D /* PermissionAlertPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0F7F6231BA73D0020320D /* PermissionAlertPageObject.swift */; };
 		031E0241220B433C00A329F1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E0240220B433C00A329F1 /* UIImage+Color.swift */; };
 		03C127B8220993300062F7C9 /* InboxZeroLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */; };
 		03E8D824221D339200EB792A /* GithubURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8D823221D339200EB792A /* GithubURL.swift */; };
@@ -646,6 +646,7 @@
 		02BC0EBF231C48F1008C6BF8 /* ScrollHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHelper.swift; sourceTree = "<group>"; };
 		02BC0EC1231D1576008C6BF8 /* AIContrastContextMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIContrastContextMenuItem.swift; sourceTree = "<group>"; };
 		02BC0EC4231D191B008C6BF8 /* ContextMenuVCPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuVCPageObject.swift; sourceTree = "<group>"; };
+		02BC0ECD231E4E2A008C6BF8 /* PermissionAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PermissionAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7AE231696750020320D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		02E0F7B023169EA50020320D /* AuthorizationTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTokens.swift; sourceTree = "<group>"; };
 		02E0F7B52316A44B0020320D /* TextFieldPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPageObject.swift; sourceTree = "<group>"; };
@@ -661,7 +662,6 @@
 		02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalAccessTokenAlertPageObject.swift; path = FreetimeUITests/ViewControllersPageObject/Alerts/PersonalAccessTokenAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		02E0F7F223191F7A0020320D /* Springboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 		02E0F7F423194C2A0020320D /* SwitchPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchPageObject.swift; sourceTree = "<group>"; };
-		02E0F7F6231BA73D0020320D /* PermissionAlertPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PermissionAlertPageObject.swift; path = FreetimeUITests/ElementsPageObject/Controls/PermissionAlertPageObject.swift; sourceTree = SOURCE_ROOT; };
 		031E0240220B433C00A329F1 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		03C127B7220993300062F7C9 /* InboxZeroLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxZeroLoaderTests.swift; sourceTree = "<group>"; };
 		03E8D823221D339200EB792A /* GithubURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubURL.swift; sourceTree = "<group>"; };
@@ -1351,7 +1351,7 @@
 			isa = PBXGroup;
 			children = (
 				02E0F7EC23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift */,
-				02E0F7F6231BA73D0020320D /* PermissionAlertPageObject.swift */,
+				02BC0ECD231E4E2A008C6BF8 /* PermissionAlertPageObject.swift */,
 			);
 			name = Alerts;
 			path = ../ElementsPageObject/Alerts;
@@ -3108,7 +3108,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E0F7F7231BA73E0020320D /* PermissionAlertPageObject.swift in Sources */,
 				02E0F7C62316B4730020320D /* BasicTests.swift in Sources */,
 				02BC0EC2231D1576008C6BF8 /* AIContrastContextMenuItem.swift in Sources */,
 				02E0F7DC2316F82A0020320D /* NotificationsVCPageObject.swift in Sources */,
@@ -3120,6 +3119,7 @@
 				02BC0EC5231D191B008C6BF8 /* ContextMenuVCPageObject.swift in Sources */,
 				02E0F7ED23191DCE0020320D /* PersonalAccessTokenAlertPageObject.swift in Sources */,
 				02E0F7E82318FE400020320D /* AISettingsViewController.swift in Sources */,
+				02BC0ECE231E4E2A008C6BF8 /* PermissionAlertPageObject.swift in Sources */,
 				02E0F7C72316B4760020320D /* AILoginSplashViewController.swift in Sources */,
 				02E0F7E42317D92F0020320D /* BookmarksVCPageObject.swift in Sources */,
 				02BC0EC0231C48F1008C6BF8 /* ScrollHelper.swift in Sources */,

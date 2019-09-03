@@ -8,7 +8,7 @@
 
 import XCTest
 
-class LabelPageObject: BasicControlElementsPageObject {
+final class LabelPageObject: BasicControlElementsPageObject {
     var title: String {
         return element.label
     }

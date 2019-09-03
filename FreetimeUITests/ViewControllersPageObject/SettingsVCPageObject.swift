@@ -7,7 +7,7 @@
 
 import XCTest
 
-class SettingsVCPageObject: BasicPageObject {
+final class SettingsVCPageObject: BasicPageObject {
     private(set) lazy var navigationBarTitle = LabelPageObject(element: application.navigationBars["Settings"])
     
     private(set) lazy var pushCell = CellPageObject(element: application.cells[AISettingsViewController.pushCell.identifier])

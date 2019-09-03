@@ -7,12 +7,11 @@
 
 import XCTest
 
-class Springboard {
+final class Springboard {
     
     static let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
     
     class func deleteMyApp() {
-        XCUIApplication().terminate()
         
         // Force delete the app from the springboard
         let icon = springboard.icons["GitHawk"]

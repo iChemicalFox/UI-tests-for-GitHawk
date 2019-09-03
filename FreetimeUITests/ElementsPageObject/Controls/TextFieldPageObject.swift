@@ -7,7 +7,7 @@
 
 import XCTest
 
-class TextFieldPageObject: BasicControlElementsPageObject {
+final class TextFieldPageObject: BasicControlElementsPageObject {
     var title: String {
         return element.label
     }

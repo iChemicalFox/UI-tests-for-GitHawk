@@ -7,7 +7,7 @@
 
 import XCTest
 
-class ContextMenuVCPageObject: BasicPageObject {
+final class ContextMenuVCPageObject: BasicPageObject {
     private(set) lazy var unreadCell = CellPageObject(element: application.cells[AIContrastContextMenuItem.unreadCell.identifier])
     private(set) lazy var allCell = CellPageObject(element: application.cells[AIContrastContextMenuItem.allCell.identifier])
     private(set) lazy var assignedCell = CellPageObject(element: application.cells[AIContrastContextMenuItem.assignedCell.identifier])

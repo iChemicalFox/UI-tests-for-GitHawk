@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ButtonPageObject: BasicControlElementsPageObject {
+final class ButtonPageObject: BasicControlElementsPageObject {
     var title: String {
         return element.label
     }
